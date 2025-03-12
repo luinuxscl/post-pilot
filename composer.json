@@ -1,0 +1,39 @@
+{
+    "name": "luinuxscl/post-pilot",
+    "description": "Automatiza la creación de contenido con agentes escritores inteligentes en Laravel.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis Sepulveda",
+            "email": "lsepulveda@outlook.com",
+            "homepage": "https://like.cl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "luinuxscl/laravel-prompts": "*",
+        "luinuxscl/laravel-api-key-manager": "*",
+        "luinuxscl/wordpress-basic-auth": "*",
+        "luinuxscl/option-package": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luinuxscl\\PostPilot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luinuxscl\\PostPilot\\Providers\\PostPilotServiceProvider"
+            ],
+            "aliases": {
+                "PostPilot": "Luinuxscl\\PostPilot\\Facades\\PostPilot"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

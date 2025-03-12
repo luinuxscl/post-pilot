@@ -1,0 +1,32 @@
+{
+    "name": "luinuxscl/wordpress-basic-auth",
+    "description": "Autenticación básica para WordPress en Laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luis Sepulveda",
+            "email": "lsepulveda@outlook.com",
+            "homepage": "https://like.cl",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luinuxscl\\WordpressBasicAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luinuxscl\\WordpressBasicAuth\\WordpressBasicAuthServiceProvider"
+            ]
+        }
+    }
+}
